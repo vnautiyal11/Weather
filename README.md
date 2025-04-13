@@ -38,3 +38,4 @@ A responsive React.js weather application that allows users to:
    ```bash
    git clone https://github.com/yourusername/weather-app.git
    cd weather-app
+Deployed using Vercel : https://weather-vaibhavs-projects-e4d6a226.vercel.app/
