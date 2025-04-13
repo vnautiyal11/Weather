@@ -1,0 +1,173 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Apply dark mode background to the body when .dark is active */
+.app.dark body,
+.app.dark {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.app {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app.dark {
+  background-color: #2b2b2b;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app.dark input {
+  background-color: #444;
+  border: 1px solid #666;
+  color: #f0f0f0;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.app.dark button {
+  background-color: #5d8aff;
+}
+
+.app.dark button:hover {
+  background-color: #3f6de0;
+}
+
+/* Toggle Button */
+.toggle-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.toggle-button {
+  background-color: #eee;
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.app.dark .toggle-button {
+  background-color: #333;
+  color: white;
+}
+
+/* Suggestions */
+.suggestions {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.suggestions li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.suggestions li:hover {
+  background-color: #f0f0f0;
+}
+
+.app.dark .suggestions {
+  background-color: #3a3a3a;
+  border: 1px solid #555;
+}
+
+.app.dark .suggestions li {
+  border-bottom: 1px solid #555;
+}
+
+.app.dark .suggestions li:hover {
+  background-color: #555;
+}
+
+/* Weather Box */
+.weather-box {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app.dark .weather-box {
+  background-color: #3a3a3a;
+}
+
+.weather-box h2 {
+  margin: 0 0 10px 0;
+}
+
+.weather-box img {
+  height: 60px;
+}
+
+.weather-box .description {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.weather-box .details p {
+  margin: 6px 0;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  margin-top: 10px;
+}
