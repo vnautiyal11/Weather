@@ -41,7 +41,7 @@ function App() {
 
   const fetchWeather = async (cityName) => {
     const apiKey = '8adfb22d65ffdc2578a8dd5d7cf66f8e';
-    const url = `http://api.weatherstack.com/current?access_key=${apiKey}&query=${cityName}`;
+    const url = `https://api.weatherstack.com/current?access_key=${apiKey}&query=${cityName}`;
 
     try {
       const response = await fetch(url);
